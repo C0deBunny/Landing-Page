@@ -8,21 +8,23 @@ body {
 
 header{
     background-color: #6F4E37;
-    box-sizing: border-box;
-    height: 60px;
-    padding: 10px 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50px;
+    padding:  0 calc((100% - 1500px)/2) 0;
 }
 
 .header-logo {
-    height: 0;
-    min-height: 100%;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
 }
 
 .links {
     display: flex;
+    padding: 0;
+    margin: 0 10px 0 0;
     gap: 20px;
 }
 
@@ -38,18 +40,20 @@ a {
 
 .body-1 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 100px;
-    height: 350px;
     background-color: #6F4E37;
     box-sizing: border-box;
+    min-height: 350px;
+    padding:  0 calc((100% - 1500px)/2) 0;
 }
 
 .left-body-1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0 10px 0 10px;
 }
 
 .title-body-1 {
@@ -72,22 +76,25 @@ a {
     font-size: 18px;
     border-color: transparent;
     border-radius: 5px;
-    margin-top: 15px;
+    margin: 15px 0 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.right-body-2{
-    width: 500px;
-    height: 280px;
+.right-body-1{
+    height: 300px;
+    width: 550px;
     object-fit: cover;
     border-radius: 10px;
+    margin: 0 10px 0 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .body-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 600px;
+    gap: 40px;
+    padding:  0 calc((100% - 1500px)/2) 0;
     background-color: #FED8B1;
 }
 
@@ -95,23 +102,135 @@ a {
     font-size: 36px;
     font-weight: 900;
     color: #6F4E37;
+    margin-top: 30px;
 }
 
-.dishes {
+.recipes-container {
     display: flex;
-    flex-wrap: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    flex-shrink: 0;
+    margin-bottom: 40px;
 }
 
-.img-list {
+.image-container {
+    font-size: 18px;
+    color: #6F4E37;
     width: 200px;
+    size: 300px;
+    box-sizing: border-box;
+}
+
+.img {
+    width: 200px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
+    border-radius: 10px;
+    border: 5px solid #ECB176;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.image-text {
+.img-text {
+    margin: 10px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+.body-3 {
+    padding:  0 calc((100% - 1000px)/2) 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    background-color: #ebc096;
+}
+
+.quote {
+    padding: 0;
+    margin: 0 10px 10px 10px;
+    font-size: 28px;
+    font-style: italic;
+    color: #6F4E37;
+    text-align: justify;
+}
+
+.author {
+    align-self: flex-end;
+    padding: 0;
+    margin: 0 10px;
+    font-size: 18px;
+    font-style: italic;
+    color: #6F4E37;
+}
+
+.body-4 {
+    display: flex;
+    background-color: #FED8B1;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-4-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    box-sizing: border-box;
+    height: 150px;
+    width: 800px;
+    gap: 40px;
+    border-radius: 40px;
+    background-color: #ECB176;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.left-body-4 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.title-body-4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6F4E37;
+}
+
+.text-body-4 {
     font-size: 18px;
     color: #6F4E37;
+}
+
+.right-body-4 {
+    margin-right: 10px;
+}
+
+.button-body-4 {
+    background-color: transparent;
+    color: #6F4E37;
+    padding: 15px;
+    border: 3px solid #6F4E37;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+    min-height: 50px;
+    background-color: #6F4E37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 18px;
+    color: #FED8B1;
 }
